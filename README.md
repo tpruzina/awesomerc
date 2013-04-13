@@ -9,6 +9,7 @@ Awesome WM 3.5 Configuration
 *Without fancy themes, widgets etc
 *Custom binds are tuned for both dvorak programming layout (dvp)
 
+<pre>
 .
 ├── myrc                -custom functions (change kb layout, run once...)
 │   ├── error.lua
@@ -27,4 +28,4 @@ Awesome WM 3.5 Configuration
     ├── signals.lua
     └── wiboxrc.lua
 
-3 directories, 13 files
+</pre>
