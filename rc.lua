@@ -40,6 +40,7 @@ lower_volume_cmd = "amixer -q set Master 4-"
 
 -- Default modkey (Mod4 = WinKey)
 modkey = "Mod4"
+altkey = "#94"
 
 -- TAGS (screens) && LAYOUTS
 require("settings.tags")
