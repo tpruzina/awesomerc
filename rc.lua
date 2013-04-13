@@ -35,10 +35,13 @@ modkey = "Mod4"
 
 -- TAGS (screens) && LAYOUTS
 require("settings.tags")
+
 -- MENUS (menubar, etc)
 require("settings.menus")
+
 -- Default wibox stuff (gentoo config)
 require("stock.wiboxrc")
+
 -- Key && mouse bindings
 require("stock.binds")
 require("settings.custom_binds")
@@ -48,11 +51,8 @@ root.keys(globalkeys) -- this actually sets the keys
 -- rules per app (placement, floating, etc)
 require("settings.window_rules")
 
--- SIGNALS 
+-- SIGNALs function to execute when a new client appears.
 require("stock.signals")
--- can't be accessed from module for some (to me unknown) reason
-client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
-client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- STARTUP apps
 require("settings.startup")

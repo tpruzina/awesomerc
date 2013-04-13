@@ -8,6 +8,7 @@ Based on Gentoos default rc.file<br>
 *Simple<br>
 *Without fancy themes, widgets etc<br>
 *Custom binds are tuned for both dvorak programming layout (dvp)<br>
+*Lua 5.2<br>
 
 <pre>
 .

@@ -2,7 +2,7 @@
 -- Signal function to execute when a new client appears.
 
 awful = require("awful")
-require("beautiful")
+beautiful = require("beautiful")
 
 client.connect_signal("manage", function (c, startup)
     -- Enable sloppy focus
@@ -70,6 +70,9 @@ client.connect_signal("manage", function (c, startup)
         awful.titlebar(c):set_widget(layout)
     end
 end)
+
+client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
+client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 
 -- }}}
 
