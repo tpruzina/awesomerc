@@ -1,10 +1,8 @@
 -- Signals
 -- Signal function to execute when a new client appears.
 
-require("awful")
+local awful = require("awful")
 require("beautiful")
-awful.rules = require("awful.rules")
-require("awful.autofocus")
 
 client.connect_signal("manage", function (c, startup)
     -- Enable sloppy focus

@@ -1,6 +1,4 @@
-awful = require("awful")
-awful.rules = require("awful.rules")
-require("awful.autofocus")
+local awful = require("awful")
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(
@@ -11,7 +9,7 @@ root.buttons(awful.util.table.join(
 -- }}}
 
 -- {{{ Key bindings
-globalkeys = awful.util.table.join(
+globalkeys = awful.util.table.join(globalbinds,
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
@@ -28,20 +26,6 @@ globalkeys = awful.util.table.join(
         end),
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end),
 
-
-    awful.key({ }, "XF86AudioRaiseVolume", function () awful.util.spawn("amixer -q set Master 4+") end),
-    awful.key({ }, "XF86AudioLowerVolume", function () awful.util.spawn("amixer -q set Master 4-") end),
-
-    awful.key({ }, "XF86MonBrightnessDown", function () awful.util.spawn("/usr/local/sbin/brightness down") end),
-    awful.key({ }, "XF86MonBrightnessUp", function () awful.util.spawn("/usr/local/sbin/brightness up") end),
-
-    awful.key({ }, "XF86AudioMute", function () awful.util.spawn("/home/tomas/bin/mute") end),
-
-    awful.key({ modkey }, "F12", function () awful.util.spawn("xrandr --output HDMI1 --auto") end),
-    awful.key({ }, "XF86Explorer", function () awful.util.spawn("xrandr --output HDMI1 --auto") end),
-    awful.key({ }, "XF86WWW", function () awful.util.spawn("/usr/bin/rotate") end),
-    awful.key({ }, "XF86Launch4", function () awful.util.spawn("/usr/sbin/hibernate-ram") end),
-    awful.key({ modkey,           }, "Shift_R", function () kbdcfg.switch() end),
 
 
     -- Layout manipulation
@@ -91,10 +75,6 @@ globalkeys = awful.util.table.join(
 
 clientkeys = awful.util.table.join(
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
---- CARE, THESE ARE NON STANDARD    
-    awful.key({ modkey, "Shift"   }, "'",      function (c) c:kill()                         end),
-    awful.key({ modkey, "Shift"   }, ";",      function (c) c:kill()                         end),
----- /    
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
     awful.key({ modkey,           }, "o",      awful.client.movetoscreen                        ),
@@ -154,7 +134,4 @@ clientbuttons = awful.util.table.join(
     awful.button({ modkey }, 1, awful.mouse.client.move),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
 
--- Set keys
-root.keys(globalkeys)
--- }}}
 

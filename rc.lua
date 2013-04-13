@@ -39,9 +39,10 @@ require("settings.tags")
 require("settings.menus")
 -- Default wibox stuff (gentoo config)
 require("stock.wiboxrc")
--- Default bindings
+-- Key && mouse bindings
 require("stock.binds")
--- Custom bindings
+require("settings.custom_binds")
+root.keys(globalkeys) -- this actually sets the keys
 
 -- WINDOW RULES
 -- rules per app (placement, floating, etc)

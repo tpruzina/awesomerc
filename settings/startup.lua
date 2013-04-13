@@ -1,5 +1,5 @@
 require("myrc.run_once")
-require("awful")
+local awful = require("awful")
 
 run_once("firefox")
 run_once("pidgin")
