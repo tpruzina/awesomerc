@@ -3,11 +3,11 @@ awesomerc
 
 Awesome WM 3.5 Configuration
 
-*Based on Gentoos default rc.file
-*Modular
-*Simple
-*Without fancy themes, widgets etc
-*Custom binds are tuned for both dvorak programming layout (dvp)
+Based on Gentoos default rc.file<br>
+*Modular<br>
+*Simple<br>
+*Without fancy themes, widgets etc<br>
+*Custom binds are tuned for both dvorak programming layout (dvp)<br>
 
 <pre>
 .
