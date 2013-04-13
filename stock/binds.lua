@@ -1,4 +1,6 @@
 local awful = require("awful")
+local menubar = require("menubar")
+
 
 -- {{{ Mouse bindings
 root.buttons(awful.util.table.join(

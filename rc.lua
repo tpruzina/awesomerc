@@ -30,6 +30,14 @@ editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 configpath="/home/"..os.getenv("USER").."/.config/awesome/"
 
+
+-- KEYBINDED COMMANDS (see settings/custom_binds.lua)
+hibernate_cmd = "/usr/sbin/hibernate-ram"
+mute_cmd = "/home/tomas/bin/mute"
+brightness_cmd = "/usr/local/sbin/brightness"
+raise_volume_cmd = "amixer -q set Master 4+"
+lower_volume_cmd = "amixer -q set Master 4-"
+
 -- Default modkey (Mod4 = WinKey)
 modkey = "Mod4"
 
