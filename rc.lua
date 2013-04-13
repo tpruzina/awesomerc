@@ -18,7 +18,11 @@ local menubar = require("menubar")
 -- EXTENSIONS (functions etc)
 local mykb  = require("myrc.kb_layout") -- change keyboard layout
 local myro  = require("myrc.run_once")  -- run app as long it's not running already
-local myerr = require("myrc.error")     -- error reporting
+--local myerr = require("myrc.error")     -- error reporting
+
+--LOGGER
+--dependencies: http://awesome.naquadah.org/wiki/Naughty_log_watcher 
+--local lognotify = require("lognotify")
 
 -- THEME
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
@@ -38,9 +42,8 @@ brightness_cmd = "/usr/local/sbin/brightness"
 raise_volume_cmd = "amixer -q set Master 4+"
 lower_volume_cmd = "amixer -q set Master 4-"
 
--- Default modkey (Mod4 = WinKey)
+-- Default modkey (DEFAULT Mod4 = WinKey)
 modkey = "Mod4"
-altkey = "#94"
 
 -- TAGS (screens) && LAYOUTS
 require("settings.tags")
