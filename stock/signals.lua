@@ -1,7 +1,7 @@
 -- Signals
 -- Signal function to execute when a new client appears.
 
-local awful = require("awful")
+awful = require("awful")
 require("beautiful")
 
 client.connect_signal("manage", function (c, startup)

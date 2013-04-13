@@ -4,7 +4,7 @@
 
 -- Standard awesome library
 local gears = require("gears")
-local awful = require("awful")
+awful = require("awful")
 awful.rules = require("awful.rules")
 require("awful.autofocus")
 -- Widget and layout library
@@ -18,7 +18,7 @@ local menubar = require("menubar")
 -- EXTENSIONS (functions etc)
 local mykb  = require("myrc.kb_layout") -- change keyboard layout
 local myro  = require("myrc.run_once")  -- run app as long it's not running already
---local myerr = require("myrc.error")     -- error reporting
+local myerr = require("myrc.error")     -- error reporting
 
 -- THEME
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")

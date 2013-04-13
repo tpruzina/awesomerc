@@ -26,8 +26,6 @@ globalkeys = awful.util.table.join(globalbinds,
         end),
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end),
 
-
-
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
@@ -58,9 +56,6 @@ globalkeys = awful.util.table.join(globalbinds,
 
     awful.key({ modkey, "Control" }, "n", awful.client.restore),
 
-    -- Prompt
-    -- CARE, NON STANDARD BINDING
-    awful.key({ modkey },            "q",     function () mypromptbox[mouse.screen]:run() end),
 
     awful.key({ modkey }, "x",
               function ()
