@@ -68,7 +68,7 @@ globalkeys = awful.util.table.join(globalbinds,
     awful.key({ modkey }, "p", function() menubar.show() end)
 )
 
-clientkeys = awful.util.table.join(
+clientkeys = awful.util.table.join(clientkeys,
     awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
@@ -124,7 +124,7 @@ for i = 1, 9 do
                   end))
 end
 
-clientbuttons = awful.util.table.join(
+clientbuttons = awful.util.table.join(clientbuttons,
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
     awful.button({ modkey }, 1, awful.mouse.client.move),
     awful.button({ modkey }, 3, awful.mouse.client.resize))
