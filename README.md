@@ -11,21 +11,24 @@ Based on Gentoos default rc.file<br>
 
 <pre>
 .
-├── myrc                -custom functions (change kb layout, run once...)
+├── myrc
 │   ├── error.lua
 │   ├── kb_layout.lua
 │   └── run_once.lua
-├── rc.lua              -main rc (calls other modules)
-├── README.md           -this file
-├── settings            -user settings
+├── rc.lua
+├── README.md
+├── settings
+│   ├── custom_binds.lua
 │   ├── menus.lua
 │   ├── startup.lua
 │   ├── tags.lua
 │   ├── wallpaper.lua
 │   └── window_rules.lua
-└── stock               -untouched parts of gentoo's default config
+└── stock
     ├── binds.lua
     ├── signals.lua
     └── wiboxrc.lua
+
+3 directories, 14 files
 
 </pre>
