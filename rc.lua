@@ -20,19 +20,19 @@ local mykb  = require("myrc.kb_layout") -- change keyboard layout
 local myro  = require("myrc.run_once")  -- run app as long it's not running already
 --local myerr = require("myrc.error")     -- error reporting
 
---LOGGER
---dependencies: http://awesome.naquadah.org/wiki/Naughty_log_watcher 
---local lognotify = require("lognotify")
-
--- THEME
-beautiful.init("/usr/share/awesome/themes/default/theme.lua")
---local mywp = require("settings.wallpaper")
-
 -- VARIABLES
 terminal = "urxvtc"
 editor = "vim"
 editor_cmd = terminal .. " -e " .. editor
 configpath="/home/"..os.getenv("USER").."/.config/awesome/"
+
+-- THEME
+-- default theme
+beautiful.init("/usr/share/awesome/themes/default/theme.lua")
+
+-- CUSTOM THEMES - pick name from themes/
+--local theme = "zenburn-custom"
+--beautiful.init(configpath .. "/themes/" .. theme ..  "/theme.lua")
 
 
 -- KEYBINDED COMMANDS (see settings/custom_binds.lua)
@@ -69,8 +69,15 @@ require("stock.signals")
 -- STARTUP apps
 require("settings.startup")
 
+
+--LOGGER
+--dependencies: http://awesome.naquadah.org/wiki/Naughty_log_watcher 
+--local lognotify = require("lognotify")
+
 --Calendar
 require('plugins.Orglendar.orglendar')
 orglendar.register(mytextclock)
 
+-- wallpaper snippet
+--local mywp = require("settings.wallpaper")
 
