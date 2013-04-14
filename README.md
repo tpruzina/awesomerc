@@ -11,6 +11,7 @@ Based on Gentoos default rc.file<br>
 *Lua 5.2<br>
 
 <pre>
+
 .
 ├── myrc
 │   ├── error.lua
@@ -19,8 +20,7 @@ Based on Gentoos default rc.file<br>
 │   └── run_once.lua
 ├── orglendar
 │   ├── orglendar.lua
-│   ├── README.md
-│   └── work.org
+│   └── README.md
 ├── rc.lua
 ├── README.md
 ├── screenshot
@@ -37,6 +37,5 @@ Based on Gentoos default rc.file<br>
     ├── signals.lua
     └── wiboxrc.lua
 
-5 directories, 19 files
-
+5 directories, 18 files
 </pre>

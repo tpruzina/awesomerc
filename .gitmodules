@@ -1,0 +1,3 @@
+[submodule "orglendar"]
+	path = orglendar
+	url = git://github.com/alexander-yakushev/Orglendar.git
