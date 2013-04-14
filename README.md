@@ -10,6 +10,10 @@ Based on Gentoos default rc.file<br>
 *Custom binds are tuned for both dvorak programming layout (dvp)<br>
 *Lua 5.2<br>
 
+TO DOWNLOAD THEMES AND PLUGINS RUN:
+<code>git submodule update --init</code>
+
+
 <pre>
 .
 ├── myrc
