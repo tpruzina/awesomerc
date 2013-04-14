@@ -6,7 +6,7 @@ Awesome WM 3.5 Configuration
 Based on Gentoos default rc.file<br>
 *Modular<br>
 *Simple<br>
-*Without fancy themes, widgets etc<br>
+*Simple way of adding themes
 *Custom binds are tuned for both dvorak programming layout (dvp)<br>
 *Lua 5.2<br>
 
