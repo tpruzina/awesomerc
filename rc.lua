@@ -69,3 +69,8 @@ require("stock.signals")
 -- STARTUP apps
 require("settings.startup")
 
+--Calendar
+require('orglendar.orglendar')
+orglendar.register(mytextclock)
+
+
