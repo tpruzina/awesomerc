@@ -15,9 +15,16 @@ Based on Gentoos default rc.file<br>
 ├── myrc
 │   ├── error.lua
 │   ├── kb_layout.lua
+│   ├── logger.lua
 │   └── run_once.lua
+├── orglendar
+│   ├── orglendar.lua
+│   ├── README.md
+│   └── work.org
 ├── rc.lua
 ├── README.md
+├── screenshot
+│   └── default.png
 ├── settings
 │   ├── custom_binds.lua
 │   ├── menus.lua
@@ -30,6 +37,6 @@ Based on Gentoos default rc.file<br>
     ├── signals.lua
     └── wiboxrc.lua
 
-3 directories, 14 files
+5 directories, 19 files
 
 </pre>
