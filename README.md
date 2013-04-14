@@ -5,14 +5,12 @@ Awesome WM 3.5 Configuration
 
 Based on Gentoos default rc.file<br>
 *Modular<br>
-*Simple<br>
-*Simple way of adding themes
+*Easily themable (continue reading) <br>
 *Custom binds are tuned for both dvorak programming layout (dvp)<br>
 *Lua 5.2<br>
 
-TO DOWNLOAD THEMES AND PLUGINS RUN:
+To download code from git submodules (themes, plugins), run:<br>
 <code>git submodule update --init</code>
-
 
 <pre>
 .
