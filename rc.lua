@@ -76,15 +76,17 @@ require("settings.startup")
 --local lognotify = require("lognotify")
 
 
---Orglendar plugin
--- uncomment and adjust paths to use
+-- {{{ Orglendar plugin
+--     uncomment and adjust paths to use
 
 --require('plugins.Orglendar.orglendar')
 --orglendar.files = { "/home/username/Documents/Notes/work.org",    -- Specify here all files you want to be parsed, separated by comma.
 --                     "/home/username/Documents/stuff/home.org" }
 --orglendar.register(mytextclock)
+--}}}
 
-
--- wallpaper snippet
+-- {{{ wallpaper snippet
 --local mywp = require("settings.wallpaper")
+--}}}
+
 
