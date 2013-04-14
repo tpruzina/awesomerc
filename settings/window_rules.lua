@@ -16,7 +16,8 @@ awful.rules.rules = {
         },
         {
                 rule = { class = "Pidgin" },
-                properties = { tag = tags[1][5] },
+                properties = { tag = tags[1][5],
+                               floating = false},
         },
         { 
                 rule = { instance = "plugin-container"},
