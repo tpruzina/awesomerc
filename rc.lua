@@ -70,7 +70,7 @@ require("stock.signals")
 require("settings.startup")
 
 --Calendar
-require('plugins.orglendar.orglendar')
+require('plugins.Orglendar.orglendar')
 orglendar.register(mytextclock)
 
 
