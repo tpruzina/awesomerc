@@ -31,7 +31,7 @@ configpath="/home/"..os.getenv("USER").."/.config/awesome/"
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 -- CUSTOM THEMES - pick name from themes/
---local theme = "zenburn-custom"
+--local theme = "lined"
 --beautiful.init(configpath .. "/themes/" .. theme ..  "/theme.lua")
 
 
@@ -85,7 +85,7 @@ require("settings.startup")
 --orglendar.register(mytextclock)
 --}}}
 
--- {{{ wallpaper snippet
+-- {{{ wallpaper snippet - sets wallpaper on each screen
 --local mywp = require("settings.wallpaper")
 --}}}
 
