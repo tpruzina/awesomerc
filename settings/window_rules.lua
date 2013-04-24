@@ -34,6 +34,10 @@ awful.rules.rules = {
                 rule = { class = "gimp" },
                 properties = { floating = true }
         },
+        {
+                rule = { class = "Wine" },
+                properties = { tag = tags[1][7] }
+        }
 }
 -- }}}
 

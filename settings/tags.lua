@@ -28,18 +28,21 @@ if screen.count() == 1 then
               tags[1] = awful.tag(tags1_1.names, 1, tags1_1.layout)
 else
 
-    tags2_1 = {
+    tags2_2 = {
                names  = { "[web]", "[shell]", "[work]", "[coding]", "[mail/calendar]", "[music]", "[other]" },
-               layout = { layouts[1], layouts[1], layouts[1], layouts[1], layouts[1], layouts[1], layouts[3] }
+               layout = { layouts[2], layouts[2], layouts[2], layouts[4], layouts[2], layouts[2], layouts[3] }
               }
 
-    tags2_2 = {
+    tags2_1 = {
               names  = { "[code]", "[web]", "[chat]", "[misc]" },
-              layout = { layouts[1], layouts[3], layouts[1], layouts[3] }
+              layout = { layouts[2], layouts[2], layouts[2], layouts[1] }
                }
 
-              tags[1] = awful.tag(tags2_1.names, 1, tags2_1.layout)
-              tags[2] = awful.tag(tags2_2.names, 2, tags2_2.layout)
+	      -- slightly hackish, inverted tags - xrandr sets LVDS1 as
+	      -- primary here since I want 'main tags' on biggest monitor,
+	      -- this is the way to handle this
+              tags[2] = awful.tag(tags2_1.names, 1, tags2_1.layout)
+              tags[1] = awful.tag(tags2_2.names, 2, tags2_2.layout)
 end
 --- }}}
 
