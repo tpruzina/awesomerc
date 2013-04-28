@@ -17,7 +17,5 @@ kbdcfg = {}
         kbdcfg.widget:set_text(" " .. t[1] .. " ")
         os.execute( kbdcfg.cmd .. " " .. t[1] .. " " .. t[2] )
         naughty.notify({title = "Keyboard Layout", text = t[1], timeout = 2})        
-        -- dirty hack, you probably dont want to rebind this key
-        awful.util.spawn("xmodmap -e 'keysym Multi_key = Super_R'")
 end
 
