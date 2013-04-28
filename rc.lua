@@ -39,8 +39,8 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 hibernate_cmd = "/usr/sbin/hibernate-ram"
 mute_cmd = "/home/tomas/bin/mute"
 brightness_cmd = "xbacklight"
-raise_volume_cmd = "amixer -q set Master 4+"
-lower_volume_cmd = "amixer -q set Master 4-"
+raise_volume_cmd = "amixer -q set Master 5+"
+lower_volume_cmd = "amixer -q set Master 5-"
 
 -- Default modkey (DEFAULT Mod4 = WinKey)
 modkey = "Mod4"
