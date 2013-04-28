@@ -38,7 +38,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 -- KEYBINDED COMMANDS (see settings/custom_binds.lua)
 hibernate_cmd = "/usr/sbin/hibernate-ram"
 mute_cmd = "/home/tomas/bin/mute"
-brightness_cmd = "/usr/local/sbin/brightness"
+brightness_cmd = "xbacklight"
 raise_volume_cmd = "amixer -q set Master 4+"
 lower_volume_cmd = "amixer -q set Master 4-"
 
